@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/67314145bb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <!-- Contact Inforamation Bar -->
+    <div class="contact-info-bar">
+        <div class="contact-info-bar-left">
+            <span><a href="#">+91 00000 00000</a></span>
+            <span><a href="support@auctionbazaar.com">support@auctionbazaar.com</a></span>
+        </div>
+        <div class="social-links">
+            <a href="https://www.twitter.com"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Nav bar -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container ">
+                <div class="brand"><img src="imgs/logo.png" alt="logo"></div>
+                <ul class="nav-left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Property Catogory</a></li>
+                    <li><a href="#">Customer Stories</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        
+                <ul class="nav-right">
+                    <li><a href="#" class="btn-blue">Log In</a></li>
+                    <li><a href="#"class="btn-light">Sign Up</a></li>
+                </ul>
+                <!-- Hamburger menu -->
+                <button class="hamburger" id="menu-btn" type="button">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Property Catogory</a></li>
+                <li><a href="#">Customer Stories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-bottom">
+                <button class="btn-blue">Sign in</button>
+                <button class="btn-light">Join now</button>
+            </div>
+        </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="showcase-text text-center">
+            <h3>We Make Difference</h3>
+            <h2>Dream Explore Discover</h2>
+            <h2>Search for a Property</h2>
+            <p>Start Living Today...</p>
+        </div>
+        <div class="showcase-search-bar">
+            <input type="search" class="Search" placeholder="Search..">
+            <div class="dropdown">
+                <button onclick="dropdownFirst()" class="dropbtn">Property Type <i class="fas fa-angle-down"></i></button>
+                <div id="myDropdown1" class="dropdown-content">
+                  <a href="#">Houses</a>
+                  <a href="#">Appartments</a>
+                  <a href="#">Land</a>
+                  <a href="#">Flats</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="dropdownSecond()" class="dropbtn">State <i class="fas fa-angle-down"></i></button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="#">Delhi</a>
+                    <a href="#">Mumbai</a>
+                    <a href="#">Kolkata</a>
+                    <a href="#">chandhigarh</a>
+                    
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="dropdownThird()" class="dropbtn">City <i class="fas fa-angle-down"></i></button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#home">Gurgaon</a>
+                    <a href="#about">Noida</a>
+                    <a href="#contact">Srinagar</a>
+                </div>
+            </div>
+            <a href="#" class="btn-blue">Search</a>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Catagories -->
+        <section class="catagories m-xl">
+            <p class="text-xs text-center secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3 class="text-center primary">Discover some great Stuff & Catagory you're looking for</h3>
+            <div class="grid block-wrapper">
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Participating Bank</span>
+                        <span class="text-xs block">(11 Bank)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Residential Property</span>
+                        <span class="text-xs block">(95,000 Properties)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Commercial Property</span>
+                        <span class="text-xs block">(65,542 Properties)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Industrial Property</span>
+                        <span class="text-xs block">(78,000 Properties)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Agricultural Property</span>
+                        <span class="text-xs block">(4000 Properties)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Properties Over State</span>
+                        <span class="text-xs block">(4002 Properties)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Merger and Aquisition</span>
+                        <span class="text-xs block">(4002 Properties)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Private Equality</span>
+                        <span class="text-xs block">(4002 Properties)</span>
+                    </div>
+                </div>
+                <div class="tabs grid-items">
+                    <span class="inline-block"><i class="fa-solid fa-building-columns"></i></span>
+                    <div class="inline-block">
+                        <span class="text-bold text-xs block">Farm Land</span>
+                        <span class="text-xs block">(4002 Properties)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Auctions -->
+        <section class="upcoming-auction m-xl">
+            <p class="text-xs text-center secondary">Auction Event List.</p>
+            <h3 class="text-center primary">Upcoming Auction</h3>
+            <div class="block-wrapper">
+                <table>
+                    <tr>
+                        <th>Duration</th>
+                        <th>Residendial</th>
+                        <th>Commercial</th>
+                        <th>Industrial</th>
+                        <th>Agriculture</th>
+                        <th>Appartment</th>
+                        <th>Villa</th>
+                    </tr>
+                    <tr>
+                        <td>Witin Next 7 Days</td>
+                        <td>354</td>
+                        <td>354</td>
+                        <td>Commercial</td>
+                        <td>Commercial</td>
+                        <td>Commercial</td>
+                        <td>Commercial</td>
+                    </tr>
+                    <tr>
+                        <td>Witin Next 24 Days</td>
+                        <td>3264</td>
+                        <td>3264</td>
+                        <td>3264</td>
+                        <td>3264</td>
+                        <td>3264</td>
+                        <td>3264</td>
+                    </tr>
+                    <tr>
+                        <td>Witin Next 2 Months</td>
+                        <td>23</td>
+                        <td>23</td>
+                        <td>23</td>
+                        <td>23</td>
+                        <td>23</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Witin Next 3 Months</td>
+                        <td>355</td>
+                        <td>355</td>
+                        <td>355</td>
+                        <td>355</td>
+                        <td>355</td>
+                        <td>355</td>
+                    </tr>
+                    <tr>
+                        <td>Witin Next 5 Months</td>
+                        <td>5512</td>
+                        <td>5512</td>
+                        <td>5512</td>
+                        <td>5512</td>
+                        <td>5512</td>
+                        <td>5512</td>
+                    </tr>
+                    <tr>
+                        <td>Witin Next 1 Year</td>
+                        <td>21541</td>
+                        <td>21541</td>
+                        <td>21541</td>
+                        <td>21541</td>
+                        <td>21541</td>
+                        <td>21541</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Featured Properties -->
+        <section class="featured-properties m-xl">
+            <p class="text-xs text-center secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3 class="text-center primary">Awesome Feature Properties</h3>
+            <div class="grid block-wrapper">
+                <div class="card grid-items">
+                    <div class="card-img">
+                        <img src="imgs/card image.jpg" alt="card image">
+                        <div class="tag tag--for-sale">For sale</div>
+                        <div class="tag tag--apartment">Apartment</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="text-md">Merger & Aquisition</p>
+                        <div class="card-middle flex">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                        </div>
+                        <div class="card-bottom flex bdr-top">
+                            <div class="card-bottom-left">
+                                <span class="block  text-xs">Current Bid</span>
+                                <span class="block text-sm">Rs. 125,000,000</span>
+                            </div>
+                            <div class="card-bottom-right  bdr-left">
+                                <span><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                                <span class=" text-sm">800 sft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card grid-items">
+                    <div class="card-img">
+                        <img src="imgs/card image.jpg" alt="card image">
+                        <div class="tag tag--for-sale">For sale</div>
+                        <div class="tag tag--apartment">Apartment</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="text-md">Merger & Aquisition</p>
+                        <div class="card-middle flex">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                        </div>
+                        <div class="card-bottom flex bdr-top">
+                            <div class="card-bottom-left">
+                                <span class="block  text-xs">Current Bid</span>
+                                <span class="block text-sm">Rs. 125,000,000</span>
+                            </div>
+                            <div class="card-bottom-right  bdr-left">
+                                <span><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                                <span class=" text-sm">800 sft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card grid-items">
+                    <div class="card-img">
+                        <img src="imgs/card image.jpg" alt="card image">
+                        <div class="tag tag--for-sale">For sale</div>
+                        <div class="tag tag--apartment">Apartment</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="text-md">Merger & Aquisition</p>
+                        <div class="card-middle flex">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                        </div>
+                        <div class="card-bottom flex bdr-top">
+                            <div class="card-bottom-left">
+                                <span class="block  text-xs">Current Bid</span>
+                                <span class="block text-sm">Rs. 125,000,000</span>
+                            </div>
+                            <div class="card-bottom-right  bdr-left">
+                                <span><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                                <span class=" text-sm">800 sft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card grid-items">
+                    <div class="card-img">
+                        <img src="imgs/card image.jpg" alt="card image">
+                        <div class="tag tag--for-sale">For sale</div>
+                        <div class="tag tag--apartment">Apartment</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="text-md">Merger & Aquisition</p>
+                        <div class="card-middle flex">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                        </div>
+                        <div class="card-bottom flex bdr-top">
+                            <div class="card-bottom-left">
+                                <span class="block  text-xs">Current Bid</span>
+                                <span class="block text-sm">Rs. 125,000,000</span>
+                            </div>
+                            <div class="card-bottom-right  bdr-left">
+                                <span><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                                <span class=" text-sm">800 sft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card grid-items">
+                    <div class="card-img">
+                        <img src="imgs/card image.jpg" alt="card image">
+                        <div class="tag tag--for-sale">For sale</div>
+                        <div class="tag tag--apartment">Apartment</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="text-md">Merger & Aquisition</p>
+                        <div class="card-middle flex">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                        </div>
+                        <div class="card-bottom flex bdr-top">
+                            <div class="card-bottom-left">
+                                <span class="block  text-xs">Current Bid</span>
+                                <span class="block text-sm">Rs. 125,000,000</span>
+                            </div>
+                            <div class="card-bottom-right  bdr-left">
+                                <span><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                                <span class=" text-sm">800 sft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card grid-items">
+                    <div class="card-img">
+                        <img src="imgs/card image.jpg" alt="card image">
+                        <div class="tag tag--for-sale">For sale</div>
+                        <div class="tag tag--apartment">Apartment</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="text-md">Merger & Aquisition</p>
+                        <div class="card-middle flex">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                        </div>
+                        <div class="card-bottom flex bdr-top">
+                            <div class="card-bottom-left">
+                                <span class="block  text-xs">Current Bid</span>
+                                <span class="block text-sm">Rs. 125,000,000</span>
+                            </div>
+                            <div class="card-bottom-right  bdr-left">
+                                <span><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                                <span class=" text-sm">800 sft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block3-btn-wrapper">
+                <a href="#" class="block3-btn btn-blue">All Properties</a>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners m-xl">
+            <p class="text-xs text-center secondary">Latest partner Bank.</p>
+            <h3 class="text-center primary">Partner Bank</h3>
+            <div class="responsive block-wrapper">
+                <div><img src="imgs/kotak.jpg" alt="kotak bank"></div>
+                <div><img src="imgs/kotak.jpg" alt="kotak bank"></div>
+                <div><img src="imgs/kotak.jpg" alt="kotak bank"></div>
+                <div><img src="imgs/kotak.jpg" alt="kotak bank"></div>
+                <div><img src="imgs/kotak.jpg" alt="kotak bank"></div>
+                <div><img src="imgs/kotak.jpg" alt="kotak bank"></div>
+            </div>
+        </section>
+
+        <!-- Our Team -->
+        <section class="our-team m-xl">
+            <p class="text-xs text-center secondary">Professional Team.</p>
+            <h3 class="text-center primary">Our Team</h3>
+            <div class="team-cards block-wrapper">
+                <div class="team-card">
+                    <div class="photo"><img src="imgs/ceo.jpg" alt="ceo"></div>
+                    <p class="main">Lorem, ipsum dolor.</p>
+                    <p class="sub">CEO</p>
+                    <div class="follow-me">
+                        <p class="text-sm text-bold secondary">Follow Me</p>
+                        <div class="card-social">
+                            <a href="https://www.twitter.com"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="photo"><img src="imgs/co-founder.jpg" alt="Co-Founder"></div>
+                    <p class="main">Lorem, ipsum dolor.</p>
+                    <p class="sub">Co-Founder</p>
+                    <div class="follow-me">
+                        <p class="text-sm text-bold secondary">Follow Me</p>
+                        <div class="card-social">
+                            <a href="https://www.twitter.com"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="photo"><img src="imgs/manager.jpg" alt="manager"></div>
+                    <p class="main">Lorem, ipsum dolor.</p>
+                    <p class="sub">Manager</p>
+                    <div class="follow-me">
+                        <p class="text-sm text-bold secondary">Follow Me</p>
+                        <div class="card-social">
+                            <a href="https://www.twitter.com"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="photo"><img src="imgs/bank agent.jpg" alt="bank agent"></div>
+                    <p class="main">Lorem, ipsum dolor.</p>
+                    <p class="sub">Bank Agent</p>
+                    <div class="follow-me">
+                        <p class="text-sm text-bold secondary">Follow Me</p>
+                        <div class="card-social">
+                            <a href="https://www.twitter.com"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> <!-- Container-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top-wrapper">
+            <div class="footer-top container flex">
+                <div class="footer-top-left">
+                    <p class="text-xs">We're Professional and Expert Consultants</p>
+                    <h2 class="text-lg">For better help and business. Lets get Started</h2>
+                </div>
+                <div class="footer-top-right">
+                    <a href="#" class="btn-light">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container footer-wrapper">
+                <div class="footer-left">
+                    <div class="footer-left-image"><img src="imgs/Auction bazaar dot com.jpeg" alt="auction bazaar dot com"></div>
+                    <p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iure doloribus temporibus dignissimos nobis? Unde velit quo voluptatum.</p>
+                    <div class="email">
+                        <input type="email" placeholder="email address">
+                        <span class="email-icon"><i class="fa-regular fa-paper-plane"></i></span>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <p class="text-md text-bold">Explore our Vision</p>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Property List</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Approach</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Client</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Term of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <p class="text-md text-bold">Have any questions?</p>
+                    <div class="footer-right-wrapper text-xs">
+                        <div class="phone f-rt-box">
+                            <span class="footer-rt-icon"><i class="fa-solid fa-phone"></i></span>
+                            <div class="inline-block">
+                                <span>Phone</span>
+                                <span class="block">+91 0000 0000</span>
+                            </div>
+                        </div>
+                        <div class="address f-rt-box">
+                            <span class="footer-rt-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <div  class="inline-block">
+                                <span>Address</span>
+                                <address>
+                                   Box 564, Disneyland<br>
+                                   USA
+                                </address>
+                            </div>
+                        </div>
+                        <div class="email-address f-rt-box">
+                            <span class="footer-rt-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <div class="inline-block">
+                                <span>Email</span>
+                                <a href="#">support@auctionbazaar.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Container -->
+        </div>
+        <div class="footer-bottom">
+            <p class="text-xs">Copyright &copy; 2022 by auctionbazaar.com &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Designed by <span class="secondary">Khadimyaseen</span></p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
